@@ -11,23 +11,23 @@ title: Kondra
 	<meta name="description" content="">
 	<meta name="author" content="Taylor Jenkins">
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/fav/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/assets/img/fav/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.url }}/assets/img/fav/site.webmanifest">
+    <link rel="mask-icon" href="{{ site.url }}/assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- styles -->
-    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="{{ site.url }}/assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
 <!-- Background graphic -->
 <div class="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
     <div class="w-[108rem] flex-none flex justify-end">
         <picture>
-            <source srcset="assets/img/dark-bg-image.avif" type="image/avif">
-            <img src="assets/img/dark-bg-image.png" alt="" class="w-[90rem] flex-none max-w-none block">
+            <source srcset="{{ site.url }}/assets/img/dark-bg-image.avif" type="image/avif">
+            <img src="{{ site.url }}/assets/img/dark-bg-image.png" alt="" class="w-[90rem] flex-none max-w-none block">
         </picture>
     </div>
 </div>
@@ -35,7 +35,7 @@ title: Kondra
 <div class="sticky top-0 z-40 w-full backdrop-blur flex-none border-slate-50/[0.06] lg:z-50 lg:border-b">
     <div class="max-w-[96rem] mx-auto">
         <div class="relative flex items-center">
-            <img src="assets/img/branding/banner-small-dark.png" alt="">
+            <img src="{{ site.url }}/assets/img/branding/banner-small-dark.png" alt="">
             <div class="py-4 lg:px-8 border-slate-300/10 ml-auto mr-4 lg:mr-0">
                 Taylor Jenkins
             </div>
@@ -43,9 +43,11 @@ title: Kondra
     </div>
 </div>
 <div class="max-w-[96rem] mx-auto px-4">
-
-    <h1 class="text-3xl font-bold ">Welcome!</h1>
-    <p class="">Just learning to use Github pages.</p>
+    <section>
+        <div class="my-4">
+            {{ content }}
+        </div>
+    </section>
 </div>
 
 </body>
