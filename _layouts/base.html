@@ -10,6 +10,7 @@ title: Kondra
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="Taylor Jenkins">
+
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/img/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/img/fav/favicon-32x32.png">
@@ -18,21 +19,14 @@ title: Kondra
     <link rel="mask-icon" href="{{ site.url }}/assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+
     <!-- styles -->
-    <link href="{{ site.url }}/assets/css/styles.css" rel="stylesheet">
+    <link href="{{ site.url }}/assets/css/output.css" rel="stylesheet">
 </head>
 <body>
-<!-- Background graphic -->
-<div class="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none">
-    <div class="w-[108rem] flex-none flex justify-end">
-        <picture>
-            <source srcset="{{ site.url }}/assets/img/dark-bg-image.avif" type="image/avif">
-            <img src="{{ site.url }}/assets/img/dark-bg-image.png" alt="" class="w-[90rem] flex-none max-w-none block">
-        </picture>
-    </div>
-</div>
+
 <!-- Nav -->
-<div class="sticky top-0 z-40 w-full backdrop-blur flex-none border-slate-50/[0.06] lg:z-50 lg:border-b">
+<div class="sticky top-0 z-40 w-full bg-slate-900 border-b flex-none border-gray-800 lg:z-50 lg:border-b">
     <div class="max-w-[96rem] mx-auto">
         <div class="relative flex items-center">
             <img src="{{ site.url }}/assets/img/branding/banner-small-dark.png" alt="">
@@ -42,12 +36,22 @@ title: Kondra
         </div>
     </div>
 </div>
-<div class="max-w-[96rem] mx-auto px-4">
-    <section>
-        <div class="my-4">
-            {{ content }}
+<div class="relative flex min-h-screen flex-col justify-center overflow-hidden py-8 lg:py-12 print:m-0 print:p-0">
+    <!-- Background graphic -->
+    <div class="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none print:hidden">
+        <div class="w-[108rem] flex-none flex justify-end">
+            <picture>
+                <source srcset="{{ site.url }}/assets/img/dark-bg-image.avif" type="image/avif">
+                <img src="{{ site.url }}/assets/img/dark-bg-image.png" alt="" class="w-[90rem] flex-none max-w-none block">
+            </picture>
         </div>
-    </section>
+    </div>
+    <div class="relative w-full bg-gray-50 px-6 py-12 shadow-xl shadow-slate-700/10 ring-gray-900/5 md:mx-auto md:max-w-3xl lg:max-w-4xl lg:pt-16 lg:pb-28">
+        <article class="prose max-w-none mx-12 mt-8 prose-slate prose-headings:text-primary prose-">
+            {{ content }}
+        </article>
+    </div>
+
 </div>
 
 </body>
