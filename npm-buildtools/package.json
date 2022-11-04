@@ -4,7 +4,9 @@
   "description": "personal website",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ../assets/css/input.css -o ../assets/css/output.css --watch"
+    "dev": "tailwindcss -i ../assets/css/input.css -o ../assets/css/output.css --watch",
+    "build": "del ../assets/css/output.css & tailwindcss -i ../assets/css/input.css -o ../assets/css/output.css --minify",
+    "serve": "jekyll serve"
   },
   "repository": {
     "type": "git",

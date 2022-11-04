@@ -36,7 +36,7 @@ title: Kondra
         </div>
     </div>
 </div>
-<div class="relative flex min-h-screen flex-col justify-center overflow-hidden py-8 lg:py-12 print:m-0 print:p-0">
+<div class="relative flex min-h-screen flex-col justify-center overflow-hidden py-8 lg:py-12 print:m-0 print:hidden">
     <!-- Background graphic -->
     <div class="absolute z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none print:hidden">
         <div class="w-[108rem] flex-none flex justify-end">
@@ -50,6 +50,11 @@ title: Kondra
         <article class="prose max-w-none mx-12 mt-8 prose-slate prose-headings:text-primary prose-">
             {{ content }}
         </article>
+    </div>
+    <div class="fixed z-20 top-[5rem] bottom-0 right-4 w-[19.5rem] py-10 overflow-y-auto hidden xl:block print:hidden">
+        <ul>
+            <li><a href="#work-experience" class="text-primary hover:text-gray-100">Work Experience</a> </li>
+        </ul>
     </div>
 
 </div>

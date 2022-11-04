@@ -7,7 +7,7 @@ layout: base
 c: 403-878-9628
 
 ---
-
+# Work Experience
 ## Cost Appraiser/Consultant | Self-Employed | February 2020 – Present
 * In association with MBC Group, provide Professional Consulting and Cost Appraisal services with a specialization in large loss Insurance claims as well as public construction projects.  
 * Provide effective cost controls and coordinate reconstruction projects with contractors, Insurers, and policy holders. Prepare detailed reports for all stakeholders. 
